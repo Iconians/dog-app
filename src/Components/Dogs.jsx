@@ -38,7 +38,6 @@ import { DogCard } from "./DogCard";
 // Right now these dogs are constant, but in reality we should be getting these from our server
 export const Dogs = () => {
   const [dogs, setDogs] = useState([]);
-  const [loading, setLoading] = useState(false);
 
   fetch("../../db.json")
     .then((res) => res.json())
