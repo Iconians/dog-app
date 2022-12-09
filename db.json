@@ -1,1 +1,137 @@
-{"dogs":[{"name":"Katelin","image":"/src/assets/cowardly.png","description":"Connecticut East BMX West Bicycle","isFavorite":true,"id":0},{"name":"Dagmar","image":"/src/assets/boxer.png","description":"City Overpass Hermaphrodite around tedious","isFavorite":false,"id":1},{"name":"Amelie","image":"/src/assets/dalmation.png","description":"killer Account checkmate Mazda architecture Solutions chafe Southeast","isFavorite":true,"id":2},{"name":"Elyse","image":"/src/assets/corgi.png","description":"Hirthe or understate Dinar Minivan","isFavorite":true,"id":3},{"name":"Sunny","image":"/src/assets/boxer.png","description":"AI anenst pink geez normal South copy","isFavorite":false,"id":4},{"name":"Jovani","image":"/src/assets/corgi.png","description":"Southwest SUV Bicycle cum Steel North Refined","isFavorite":true,"id":5},{"name":"Darian","image":"/src/assets/corgi.png","description":"minus Idaho live unless bridle minus Credit neural","isFavorite":true,"id":6},{"name":"Rosetta","image":"/src/assets/dalmation.png","description":"Wagon Granite Somali Paradigm Northwest","isFavorite":false,"id":7},{"name":"Simeon","image":"/src/assets/cowardly.png","description":"cord Hassium blue Wyoming cupiditate male Accountability","isFavorite":false,"id":8},{"name":"Luigi","image":"/src/assets/corgi.png","description":"parse Mountain Rubber Bedfordshire Northeast interfaces microchip","isFavorite":true,"id":9},{"name":"Delaney","image":"/src/assets/boxer.png","description":"Direct green Southeast Erbium Convertible Ruble driver Ergonomic","isFavorite":false,"id":10},{"name":"Lafayette","image":"/src/assets/corgi.png","description":"Southeast North card Unbranded Representative so red accusantium","isFavorite":false,"id":11},{"name":"Tia","image":"/src/assets/dalmation.png","description":"North Lakin West West West","isFavorite":false,"id":12},{"name":"Parker","image":"/src/assets/boxer.png","description":"North Fantastic though Planner where Cyprus Electronic","isFavorite":true,"id":13},{"name":"Camila","image":"/src/assets/blue-heeler.png","description":"synthesizing Handcrafted Albania Funk er passenger Internal shady","isFavorite":false,"id":14},{"name":"Abby","image":"/src/assets/boxer.png","description":"invoice Leone Mazda Gasoline Diesel","isFavorite":true,"id":15},{"name":"Delores","image":"/src/assets/cowardly.png","description":"male abide Hampshire grey Rubidium","isFavorite":false,"id":16},{"name":"Devan","image":"/src/assets/blue-heeler.png","description":"Southeast Agent Sheboygan Loan Oregon","isFavorite":true,"id":17},{"name":"Chaya","image":"/src/assets/boxer.png","description":"bus Northwest Frozen Chief Implementation","isFavorite":false,"id":18},{"name":"Mable","image":"/src/assets/dalmation.png","description":"Metal digital watt ducimus Cyclocross Buckinghamshire Central","isFavorite":false,"id":19}]}
+{
+  "dogs": [
+    {
+      "name": "Stacey",
+      "image": "/src/assets/blue-heeler.png",
+      "description": "North West Cambridgeshire Borders Hybrid Burundi Cyprus plum",
+      "isFavorite": true,
+      "id": 0
+    },
+    {
+      "name": "Jayson",
+      "image": "/src/assets/chihuahua.avif",
+      "description": "New Fishers auxiliary South Chief",
+      "isFavorite": true,
+      "id": 1
+    },
+    {
+      "name": "Estevan",
+      "image": "/src/assets/boxer.png",
+      "description": "Dodge Extended Southwest Analyst Bartlett gold Gender",
+      "isFavorite": true,
+      "id": 2
+    },
+    {
+      "name": "Audra",
+      "image": "/src/assets/dalmation.png",
+      "description": "to Carmichael RSS female West",
+      "isFavorite": true,
+      "id": 3
+    },
+    {
+      "name": "Justyn",
+      "image": "/src/assets/chihuahua.avif",
+      "description": "psst East compress Principal Frozen Reggae primary",
+      "isFavorite": true,
+      "id": 4
+    },
+    {
+      "name": "Tara",
+      "image": "/src/assets/cowardly.png",
+      "description": "compressing whoever of matrix Account connecting Praseodymium",
+      "isFavorite": true,
+      "id": 5
+    },
+    {
+      "name": "Benny",
+      "image": "/src/assets/blue-heeler.png",
+      "description": "connect Salt deposit withdrawal Cambridgeshire Roberts Paterson Loan",
+      "isFavorite": true,
+      "id": 6
+    },
+    {
+      "name": "Leonel",
+      "image": "/src/assets/dalmation.png",
+      "description": "circa Garden Cotton Platinum silver mobile Thornton Automotive",
+      "isFavorite": true,
+      "id": 7
+    },
+    {
+      "name": "Richmond",
+      "image": "/src/assets/corgi.png",
+      "description": "East ivory Via architectures Designer South Ohio",
+      "isFavorite": true,
+      "id": 8
+    },
+    {
+      "name": "Abraham",
+      "image": "/src/assets/corgi.png",
+      "description": "West after Modern experiences Bromine website helplessly",
+      "isFavorite": true,
+      "id": 9
+    },
+    {
+      "name": "Kristofer",
+      "image": "/src/assets/chihuahua.avif",
+      "description": "plus Mini Customer Northeast Sheldon",
+      "isFavorite": true,
+      "id": 10
+    },
+    {
+      "name": "Elisa",
+      "image": "/src/assets/blue-heeler.png",
+      "description": "Account fairly dull users mindshare upon Kenya",
+      "isFavorite": true,
+      "id": 11
+    },
+    {
+      "name": "Bryon",
+      "image": "/src/assets/corgi.png",
+      "description": "Account wicked incidentally Non monetize Uranium inexperienced",
+      "isFavorite": true,
+      "id": 12
+    },
+    {
+      "name": "Monroe",
+      "image": "/src/assets/chihuahua.avif",
+      "description": "Bicycle protocol acidly geez Southwest",
+      "isFavorite": false,
+      "id": 14
+    },
+    {
+      "name": "Kasandra",
+      "image": "/src/assets/dalmation.png",
+      "description": "Buckinghamshire International Nevada Country olive Executive Bicycle that",
+      "isFavorite": false,
+      "id": 15
+    },
+    {
+      "name": "Otto",
+      "image": "/src/assets/blue-heeler.png",
+      "description": "yowza Specialist Sedan projection abolishment",
+      "isFavorite": false,
+      "id": 16
+    },
+    {
+      "name": "Nash",
+      "image": "/src/assets/corgi.png",
+      "description": "Celsius Virginia Latin Mauritius nihil",
+      "isFavorite": false,
+      "id": 17
+    },
+    {
+      "name": "Alan",
+      "image": "/src/assets/blue-heeler.png",
+      "description": "lark customized port Little Touring Center West",
+      "isFavorite": false,
+      "id": 18
+    },
+    {
+      "name": "Kenneth",
+      "image": "/src/assets/corgi.png",
+      "description": "Director coil background Accounts SUV Brazilian Won",
+      "isFavorite": false,
+      "id": 19
+    }
+  ]
+}

@@ -1,29 +1,50 @@
 import { useState } from "react";
 
-export const Section = ({ label, children, createDogPage }) => {
-  const favoriteDogCount = 1;
-  const unfavoriteDogCount = 2;
-
-  const [favoriteDogsPage, setFavoriteDogsPage] = useState(false);
-  const [unfavoriteDogsPage, setUnfavoriteDogsPage] = useState(false);
+export const Section = ({
+  label,
+  children,
+  createDogPage,
+  setCreateDogPage,
+  setFavoriteDogsPage,
+  setUnfavoriteDogsPage,
+  favoriteDogsPage,
+  unfavoriteDogsPage,
+  favorite,
+  unFavorite,
+}) => {
+  const favoriteDogCount = favorite;
+  const unfavoriteDogCount = unFavorite;
+  const active = "active";
   const dogsToShow = ({ target: { id } }) => {
-    console.log(id);
     if (id === "favorite") {
-      setFavoriteDogsPage(true);
-      setUnfavoriteDogsPage(false);
-      createDogPage(false);
+      if (favoriteDogsPage === false) {
+        setFavoriteDogsPage(true);
+        setUnfavoriteDogsPage(false);
+        setCreateDogPage(false);
+      } else {
+        setFavoriteDogsPage(false);
+      }
     }
     if (id === "unfavorite") {
-      setFavoriteDogsPage(false);
-      setUnfavoriteDogsPage(true);
-      createDogPage(false);
+      if (unfavoriteDogsPage === false) {
+        setFavoriteDogsPage(false);
+        setUnfavoriteDogsPage(true);
+        setCreateDogPage(false);
+      } else {
+        setUnfavoriteDogsPage(false);
+      }
     }
     if (id === "createDog") {
-      setFavoriteDogsPage(false);
-      setUnfavoriteDogsPage(false);
-      createDogPage(true);
+      if (createDogPage === false) {
+        setFavoriteDogsPage(false);
+        setUnfavoriteDogsPage(false);
+        setCreateDogPage(true);
+      } else {
+        setCreateDogPage(false);
+      }
     }
   };
+
   return (
     <section>
       <div className="container-header">
@@ -31,15 +52,27 @@ export const Section = ({ label, children, createDogPage }) => {
         <div className="selectors">
           {/* Add the class 'active' to any selector in order to make it's color change */}
           {/* This should display the favorited count */}
-          <div className={`selector active`} id="favorite" onClick={dogsToShow}>
+          <div
+            className={`selector ${favoriteDogsPage ? active : null}`}
+            id="favorite"
+            onClick={dogsToShow}
+          >
             favorited ( {favoriteDogCount} )
           </div>
 
           {/* This should display the unfavorited count */}
-          <div className={`selector`} id="unfavorite" onClick={dogsToShow}>
+          <div
+            className={`selector ${unfavoriteDogsPage ? active : null}`}
+            id="unfavorite"
+            onClick={dogsToShow}
+          >
             unfavorited ( {unfavoriteDogCount} )
           </div>
-          <div className={`selector`} id="createDog" onClick={dogsToShow}>
+          <div
+            className={`selector ${createDogPage ? active : null}`}
+            id="createDog"
+            onClick={dogsToShow}
+          >
             create dog
           </div>
         </div>

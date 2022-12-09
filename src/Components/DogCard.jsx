@@ -9,13 +9,60 @@ export const DogCard = ({
     <div className="dog-card">
       {/* Choose which button to show depending on if dog is a favorite */}
       {isFavorite ? (
-        <UnfavoriteButton onClick={() => {}} />
+        <UnfavoriteButton
+          onClick={() => {
+            const myHeaders = new Headers();
+            myHeaders.append("Content-Type", "application/json");
+            const raw = JSON.stringify({
+              isFavorite: false,
+            });
+            var requestOptions = {
+              method: "PATCH",
+              headers: myHeaders,
+              body: raw,
+              redirect: "follow",
+            };
+            fetch(`http://localhost:3000/dogs/${id}`, requestOptions).then(
+              (response) => response.text()
+            );
+          }}
+        />
       ) : (
-        <FavoriteButton onClick={() => {}} />
+        <FavoriteButton
+          onClick={() => {
+            setfavoriteOverlay(true);
+            const myHeaders = new Headers();
+            myHeaders.append("Content-Type", "application/json");
+            const raw = JSON.stringify({
+              isFavorite: true,
+            });
+            var requestOptions = {
+              method: "PATCH",
+              headers: myHeaders,
+              body: raw,
+              redirect: "follow",
+            };
+            fetch(`http://localhost:3000/dogs/${id}`, requestOptions).then(
+              (response) => response.text()
+            );
+            setfavoriteOverlay(false);
+          }}
+        />
       )}
-
       {/* Use this button to delete a puppy :( */}
-      <TrashButton disabled={true} onClick={() => {}} />
+      <TrashButton
+        disabled={isFavorite ? true : false}
+        onClick={() => {
+          var requestOptions = {
+            method: "DELETE",
+            redirect: "follow",
+          };
+
+          fetch(`http://localhost:3000/dogs/${id}`, requestOptions)
+            .then((response) => response.text())
+            .then((result) => console.log(result));
+        }}
+      />
 
       {/* Ignore this  */}
       {/* You can temporarily set a favorite overlay after a user favoritest a dog */}
