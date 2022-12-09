@@ -4,6 +4,8 @@ import { TrashButton } from "./TrashButton";
 import { UnfavoriteButton } from "./UnfavoriteButton";
 export const DogCard = ({
   dog: { name, image, description, id, isFavorite },
+  deleteDog,
+  changeFav,
 }) => {
   return (
     <div className="dog-card">
@@ -16,7 +18,7 @@ export const DogCard = ({
             const raw = JSON.stringify({
               isFavorite: false,
             });
-            var requestOptions = {
+            const requestOptions = {
               method: "PATCH",
               headers: myHeaders,
               body: raw,
@@ -25,18 +27,18 @@ export const DogCard = ({
             fetch(`http://localhost:3000/dogs/${id}`, requestOptions).then(
               (response) => response.text()
             );
+            changeFav(id);
           }}
         />
       ) : (
         <FavoriteButton
           onClick={() => {
-            setfavoriteOverlay(true);
             const myHeaders = new Headers();
             myHeaders.append("Content-Type", "application/json");
             const raw = JSON.stringify({
               isFavorite: true,
             });
-            var requestOptions = {
+            const requestOptions = {
               method: "PATCH",
               headers: myHeaders,
               body: raw,
@@ -45,7 +47,7 @@ export const DogCard = ({
             fetch(`http://localhost:3000/dogs/${id}`, requestOptions).then(
               (response) => response.text()
             );
-            setfavoriteOverlay(false);
+            changeFav(id);
           }}
         />
       )}
@@ -53,7 +55,7 @@ export const DogCard = ({
       <TrashButton
         disabled={isFavorite ? true : false}
         onClick={() => {
-          var requestOptions = {
+          const requestOptions = {
             method: "DELETE",
             redirect: "follow",
           };
@@ -61,6 +63,7 @@ export const DogCard = ({
           fetch(`http://localhost:3000/dogs/${id}`, requestOptions)
             .then((response) => response.text())
             .then((result) => console.log(result));
+          deleteDog(id);
         }}
       />
 

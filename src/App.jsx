@@ -44,6 +44,7 @@ function App() {
             unFavorites={unfavorite}
             favoriteDogs={favoriteDogsPage}
             unfavoriteDogs={unfavoriteDogsPage}
+            setDogs={setDogs}
           />
         ) : (
           <CreateDogForm />

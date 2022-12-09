@@ -1,135 +1,107 @@
 {
   "dogs": [
     {
-      "name": "Stacey",
-      "image": "/src/assets/blue-heeler.png",
-      "description": "North West Cambridgeshire Borders Hybrid Burundi Cyprus plum",
-      "isFavorite": true,
+      "name": "Stacy",
+      "image": "/src/assets/chihuahua.avif",
+      "description": "connect green Bicycle Intelligent Iowa quantify Northeast",
+      "isFavorite": false,
       "id": 0
     },
     {
-      "name": "Jayson",
-      "image": "/src/assets/chihuahua.avif",
-      "description": "New Fishers auxiliary South Chief",
-      "isFavorite": true,
+      "name": "Junior",
+      "image": "/src/assets/corgi.png",
+      "description": "Health Centralized Wagon Modern Southwest",
+      "isFavorite": false,
       "id": 1
     },
     {
-      "name": "Estevan",
+      "name": "Alysa",
       "image": "/src/assets/boxer.png",
-      "description": "Dodge Extended Southwest Analyst Bartlett gold Gender",
-      "isFavorite": true,
+      "description": "whether EXE Operations redundant District",
+      "isFavorite": false,
       "id": 2
     },
     {
-      "name": "Audra",
-      "image": "/src/assets/dalmation.png",
-      "description": "to Carmichael RSS female West",
-      "isFavorite": true,
-      "id": 3
-    },
-    {
-      "name": "Justyn",
-      "image": "/src/assets/chihuahua.avif",
-      "description": "psst East compress Principal Frozen Reggae primary",
-      "isFavorite": true,
+      "name": "Krystal",
+      "image": "/src/assets/blue-heeler.png",
+      "description": "Wisconsin Program microchip hack Gunnar",
+      "isFavorite": false,
       "id": 4
     },
     {
-      "name": "Tara",
-      "image": "/src/assets/cowardly.png",
-      "description": "compressing whoever of matrix Account connecting Praseodymium",
-      "isFavorite": true,
+      "name": "Jules",
+      "image": "/src/assets/boxer.png",
+      "description": "Devolved Southwest Metal sky Tools iusto parsing",
+      "isFavorite": false,
       "id": 5
     },
     {
-      "name": "Benny",
-      "image": "/src/assets/blue-heeler.png",
-      "description": "connect Salt deposit withdrawal Cambridgeshire Roberts Paterson Loan",
-      "isFavorite": true,
-      "id": 6
-    },
-    {
-      "name": "Leonel",
+      "name": "Chance",
       "image": "/src/assets/dalmation.png",
-      "description": "circa Garden Cotton Platinum silver mobile Thornton Automotive",
-      "isFavorite": true,
+      "description": "implement application matrix Hyundai Van City feed Diesel",
+      "isFavorite": false,
       "id": 7
     },
     {
-      "name": "Richmond",
-      "image": "/src/assets/corgi.png",
-      "description": "East ivory Via architectures Designer South Ohio",
-      "isFavorite": true,
-      "id": 8
-    },
-    {
-      "name": "Abraham",
-      "image": "/src/assets/corgi.png",
-      "description": "West after Modern experiences Bromine website helplessly",
-      "isFavorite": true,
+      "name": "April",
+      "image": "/src/assets/boxer.png",
+      "description": "anxious connecting Auto East paradigms Savings quas West",
+      "isFavorite": false,
       "id": 9
     },
     {
-      "name": "Kristofer",
-      "image": "/src/assets/chihuahua.avif",
-      "description": "plus Mini Customer Northeast Sheldon",
-      "isFavorite": true,
+      "name": "Stan",
+      "image": "/src/assets/corgi.png",
+      "description": "Vanuatu mobile Human King enterprise Collierville Southwest",
+      "isFavorite": false,
       "id": 10
     },
     {
-      "name": "Elisa",
-      "image": "/src/assets/blue-heeler.png",
-      "description": "Account fairly dull users mindshare upon Kenya",
-      "isFavorite": true,
+      "name": "Liam",
+      "image": "/src/assets/dalmation.png",
+      "description": "Passenger Minot Planner generate deposit Miquelon South Electric",
+      "isFavorite": false,
       "id": 11
     },
     {
-      "name": "Bryon",
+      "name": "Bettie",
       "image": "/src/assets/corgi.png",
-      "description": "Account wicked incidentally Non monetize Uranium inexperienced",
-      "isFavorite": true,
+      "description": "Idaho Hatchback pixel henry Modern",
+      "isFavorite": false,
       "id": 12
     },
     {
-      "name": "Monroe",
-      "image": "/src/assets/chihuahua.avif",
-      "description": "Bicycle protocol acidly geez Southwest",
+      "name": "Axel",
+      "image": "/src/assets/corgi.png",
+      "description": "unfortunately Convertible Engineer Program rag copying Northwest Coupe",
+      "isFavorite": false,
+      "id": 13
+    },
+    {
+      "name": "Collin",
+      "image": "/src/assets/corgi.png",
+      "description": "Soul taut Cambridgeshire Bugatti Bicycle",
       "isFavorite": false,
       "id": 14
     },
     {
-      "name": "Kasandra",
+      "name": "Elinore",
       "image": "/src/assets/dalmation.png",
-      "description": "Buckinghamshire International Nevada Country olive Executive Bicycle that",
-      "isFavorite": false,
-      "id": 15
-    },
-    {
-      "name": "Otto",
-      "image": "/src/assets/blue-heeler.png",
-      "description": "yowza Specialist Sedan projection abolishment",
+      "description": "transsexual synergize Account Northeast Jaguar clamber Verdie mobile",
       "isFavorite": false,
       "id": 16
     },
     {
-      "name": "Nash",
+      "name": "Ludie",
       "image": "/src/assets/corgi.png",
-      "description": "Celsius Virginia Latin Mauritius nihil",
+      "description": "quantify magenta uniform Analyst synthesize magnetic Taunton orange",
       "isFavorite": false,
       "id": 17
     },
     {
-      "name": "Alan",
-      "image": "/src/assets/blue-heeler.png",
-      "description": "lark customized port Little Touring Center West",
-      "isFavorite": false,
-      "id": 18
-    },
-    {
-      "name": "Kenneth",
+      "name": "Jorge",
       "image": "/src/assets/corgi.png",
-      "description": "Director coil background Accounts SUV Brazilian Won",
+      "description": "whoever whoever Antimony Tasty Tuna Pants East Assistant",
       "isFavorite": false,
       "id": 19
     }
