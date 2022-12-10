@@ -4,21 +4,21 @@
       "name": "Stacy",
       "image": "/src/assets/chihuahua.avif",
       "description": "connect green Bicycle Intelligent Iowa quantify Northeast",
-      "isFavorite": false,
+      "isFavorite": true,
       "id": 0
     },
     {
       "name": "Junior",
       "image": "/src/assets/corgi.png",
       "description": "Health Centralized Wagon Modern Southwest",
-      "isFavorite": false,
+      "isFavorite": true,
       "id": 1
     },
     {
       "name": "Alysa",
       "image": "/src/assets/boxer.png",
       "description": "whether EXE Operations redundant District",
-      "isFavorite": false,
+      "isFavorite": true,
       "id": 2
     },
     {

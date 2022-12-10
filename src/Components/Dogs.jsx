@@ -28,7 +28,6 @@ export const Dogs = ({
       }
       return dog;
     });
-    console.log(updateDog);
     setDogs(updateDog);
   };
 

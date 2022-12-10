@@ -18,6 +18,19 @@ function App() {
       .then((res) => setDogs(res));
   }, []);
 
+  const findIndex = () => {
+    let arr = [];
+    dogs.map((obj) => arr.push(obj.id));
+    console.log(arr);
+  };
+
+  const addDog = (newDog) => {
+    console.log(newDog);
+    // let currentIds = findIndex()
+    // setDogs([...dogs, { ...newDog, id: dogs.length + 1 }]);
+    // need to find 1st open/index slot for new dog
+  };
+
   const favorites = dogs.filter((dog) => dog.isFavorite === true);
   const unfavorite = dogs.filter((dog) => dog.isFavorite === false);
   return (
@@ -47,7 +60,7 @@ function App() {
             setDogs={setDogs}
           />
         ) : (
-          <CreateDogForm />
+          <CreateDogForm addDog={addDog} />
         )}
       </Section>
     </div>
