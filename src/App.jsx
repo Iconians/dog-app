@@ -18,16 +18,35 @@ function App() {
       .then((res) => setDogs(res));
   }, []);
 
-  const findIndex = () => {
+  const findNewId = () => {
     let arr = [];
+    let index = 0;
+    let newId = 0;
     dogs.map((obj) => arr.push(obj.id));
-    console.log(arr);
+    arr.sort((a, b) => {
+      return a - b;
+    });
+    // FIND MISSING FUNCTION HERE
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] !== index) {
+        if (newId === 0) {
+          newId = index;
+        }
+        index++;
+      }
+      if (arr[i] === index) {
+        index++;
+      }
+    }
+    if (newId === 0) {
+      newId = arr.length;
+    }
+    return newId;
   };
 
   const addDog = (newDog) => {
-    console.log(newDog);
-    // let currentIds = findIndex()
-    // setDogs([...dogs, { ...newDog, id: dogs.length + 1 }]);
+    let currentIds = findNewId();
+    setDogs([...dogs, { ...newDog, id: currentIds }]);
     // need to find 1st open/index slot for new dog
   };
 
