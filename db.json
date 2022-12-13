@@ -1,109 +1,158 @@
 {
   "dogs": [
     {
-      "name": "Stacy",
-      "image": "/src/assets/chihuahua.avif",
-      "description": "connect green Bicycle Intelligent Iowa quantify Northeast",
+      "name": "Nadia",
+      "image": "/src/assets/blue-heeler.png",
+      "description": "quia until Supervisor Home Franc",
       "isFavorite": false,
       "id": 0
     },
     {
-      "name": "Junior",
-      "image": "/src/assets/corgi.png",
-      "description": "Health Centralized Wagon Modern Southwest",
+      "name": "Sherwood",
+      "image": "/src/assets/blue-heeler.png",
+      "description": "quantify International Account Modern female",
       "isFavorite": false,
       "id": 1
     },
     {
-      "name": "Alysa",
-      "image": "/src/assets/boxer.png",
-      "description": "whether EXE Operations redundant District",
-      "isFavorite": false,
+      "name": "Alisa",
+      "image": "/src/assets/chihuahua.avif",
+      "description": "Music till even Rock Shirt Diesel West Applications",
+      "isFavorite": true,
       "id": 2
     },
     {
-      "name": "Krystal",
+      "name": "Nona",
       "image": "/src/assets/blue-heeler.png",
-      "description": "Wisconsin Program microchip hack Gunnar",
+      "description": "female duh redundant SUV Account healthily Soft",
+      "isFavorite": true,
+      "id": 3
+    },
+    {
+      "name": "Rollin",
+      "image": "/src/assets/cowardly.png",
+      "description": "Mazda person next Gasoline dimly",
       "isFavorite": false,
       "id": 4
     },
     {
-      "name": "Jules",
-      "image": "/src/assets/boxer.png",
-      "description": "Devolved Southwest Metal sky Tools iusto parsing",
-      "isFavorite": false,
+      "name": "Veronica",
+      "image": "/src/assets/dalmation.png",
+      "description": "South Polonium implement Phosphorus pascal",
+      "isFavorite": true,
       "id": 5
     },
     {
-      "name": "Chance",
+      "name": "Freeda",
       "image": "/src/assets/dalmation.png",
-      "description": "implement application matrix Hyundai Van City feed Diesel",
+      "description": "Agent payment fatherly quantifying Islands,",
+      "isFavorite": true,
+      "id": 6
+    },
+    {
+      "name": "Art",
+      "image": "/src/assets/corgi.png",
+      "description": "Southeast pascal Electric Money North bypass Metal",
       "isFavorite": false,
       "id": 7
     },
     {
-      "name": "April",
+      "name": "Albert",
       "image": "/src/assets/boxer.png",
-      "description": "anxious connecting Auto East paradigms Savings quas West",
+      "description": "Wooden alarm interface Incredible payment Convertible pish",
       "isFavorite": false,
+      "id": 8
+    },
+    {
+      "name": "Norene",
+      "image": "/src/assets/dalmation.png",
+      "description": "Sedan Borders China Ferrari Awesome",
+      "isFavorite": true,
       "id": 9
     },
     {
-      "name": "Stan",
-      "image": "/src/assets/corgi.png",
-      "description": "Vanuatu mobile Human King enterprise Collierville Southwest",
-      "isFavorite": false,
+      "name": "Paige",
+      "image": "/src/assets/cowardly.png",
+      "description": "conglomeration Hybrid Wooden Cisgender Keyboard silver Forward",
+      "isFavorite": true,
       "id": 10
     },
     {
-      "name": "Liam",
+      "name": "Elwyn",
       "image": "/src/assets/dalmation.png",
-      "description": "Passenger Minot Planner generate deposit Miquelon South Electric",
+      "description": "softly invoice payment Planner Assurance",
       "isFavorite": false,
       "id": 11
     },
     {
-      "name": "Bettie",
-      "image": "/src/assets/corgi.png",
-      "description": "Idaho Hatchback pixel henry Modern",
+      "name": "Tiara",
+      "image": "/src/assets/chihuahua.avif",
+      "description": "invoice Automated Lebanon ew fishmonger solid vortals Wagon",
       "isFavorite": false,
       "id": 12
     },
     {
-      "name": "Axel",
-      "image": "/src/assets/corgi.png",
-      "description": "unfortunately Convertible Engineer Program rag copying Northwest Coupe",
-      "isFavorite": false,
+      "name": "Tony",
+      "image": "/src/assets/dalmation.png",
+      "description": "weedkiller firmware Electric that female Forest male considering",
+      "isFavorite": true,
       "id": 13
     },
     {
-      "name": "Collin",
-      "image": "/src/assets/corgi.png",
-      "description": "Soul taut Cambridgeshire Bugatti Bicycle",
-      "isFavorite": false,
+      "name": "Stephen",
+      "image": "/src/assets/dalmation.png",
+      "description": "dock gee Sleek North Cameroon autem array",
+      "isFavorite": true,
       "id": 14
     },
     {
-      "name": "Elinore",
+      "name": "Dedrick",
       "image": "/src/assets/dalmation.png",
-      "description": "transsexual synergize Account Northeast Jaguar clamber Verdie mobile",
-      "isFavorite": false,
+      "description": "Hawaii Shirt HTTP application East quantifying Handmade program",
+      "isFavorite": true,
+      "id": 15
+    },
+    {
+      "name": "Albina",
+      "image": "/src/assets/dalmation.png",
+      "description": "relationships Soft katal Vietnam Account neglected TLS betoken",
+      "isFavorite": true,
       "id": 16
     },
     {
-      "name": "Ludie",
+      "name": "Stevie",
       "image": "/src/assets/corgi.png",
-      "description": "quantify magenta uniform Analyst synthesize magnetic Taunton orange",
-      "isFavorite": false,
+      "description": "Luxurious Daytona East South Classical",
+      "isFavorite": true,
       "id": 17
     },
     {
-      "name": "Jorge",
-      "image": "/src/assets/corgi.png",
-      "description": "whoever whoever Antimony Tasty Tuna Pants East Assistant",
+      "name": "Oceane",
+      "image": "/src/assets/dalmation.png",
+      "description": "Vietnam Chips male National synthesizing Dashawn Devolved",
       "isFavorite": false,
+      "id": 18
+    },
+    {
+      "name": "Larue",
+      "image": "/src/assets/cowardly.png",
+      "description": "Saudi East Applications who Bespoke",
+      "isFavorite": true,
       "id": 19
+    },
+    {
+      "name": "dog1",
+      "image": "/src/assets/blue-heeler.png",
+      "description": "jkllklmk",
+      "isFavorite": true,
+      "id": 20
+    },
+    {
+      "name": "dog1",
+      "image": "/src/assets/corgi.png",
+      "description": "cscs",
+      "isFavorite": true,
+      "id": 22
     }
   ]
 }

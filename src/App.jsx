@@ -11,12 +11,22 @@ function App() {
   const [unfavoriteDogsPage, setUnfavoriteDogsPage] = useState(false);
   const [createDogPage, setCreateDogPage] = useState(false);
   const [dogs, setDogs] = useState([]);
+  const [newDog, setNewDog] = useState({});
+
+  // let newDogArr = {};
+
+  const refreshUi = () => {
+    console.log("refreshed");
+  };
 
   useEffect(() => {
     fetch("http://localhost:3000/dogs")
       .then((res) => res.json())
       .then((res) => setDogs(res));
-  }, []);
+  }, [dogs]);
+
+  // FIND MISSING FUNCTION HERE
+  // build delete request here
 
   const findNewId = () => {
     let arr = [];
@@ -26,7 +36,6 @@ function App() {
     arr.sort((a, b) => {
       return a - b;
     });
-    // FIND MISSING FUNCTION HERE
     for (let i = 0; i < arr.length; i++) {
       if (arr[i] !== index) {
         if (newId === 0) {
@@ -46,10 +55,32 @@ function App() {
 
   const addDog = (newDog) => {
     let currentIds = findNewId();
-    setDogs([...dogs, { ...newDog, id: currentIds }]);
+    let newId = currentIds;
+    // newDogArr = { ...newDog, id: newId };
+    // console.log(newDog);
+    setNewDog({ ...newDog, id: newId });
+
+    // console.log(newDog);
+    // post or update to api not dogs array in state
+
+    setTimeout(() => {
+      refreshUi();
+    }, 2000);
     // need to find 1st open/index slot for new dog
   };
-
+  useEffect(() => {
+    console.log(newDog);
+    fetch("http://localhost:3000/dogs", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newDog),
+    })
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+  }, [newDog]);
+  // do update fetch to update database
   const favorites = dogs.filter((dog) => dog.isFavorite === true);
   const unfavorite = dogs.filter((dog) => dog.isFavorite === false);
   return (

@@ -15,7 +15,6 @@ export const Dogs = ({
   const deleteDog = (id) => {
     const filterdogs = dogs.filter((dog) => dog.id !== id);
     setDogs(filterdogs);
-    console.log(filterdogs);
   };
 
   const changeFav = (id) => {
