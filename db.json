@@ -18,7 +18,7 @@
       "name": "Alisa",
       "image": "/src/assets/chihuahua.avif",
       "description": "Music till even Rock Shirt Diesel West Applications",
-      "isFavorite": true,
+      "isFavorite": false,
       "id": 2
     },
     {
@@ -139,20 +139,6 @@
       "description": "Saudi East Applications who Bespoke",
       "isFavorite": true,
       "id": 19
-    },
-    {
-      "name": "dog1",
-      "image": "/src/assets/blue-heeler.png",
-      "description": "jkllklmk",
-      "isFavorite": true,
-      "id": 20
-    },
-    {
-      "name": "dog1",
-      "image": "/src/assets/corgi.png",
-      "description": "cscs",
-      "isFavorite": true,
-      "id": 22
     }
   ]
 }

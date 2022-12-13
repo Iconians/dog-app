@@ -1,10 +1,8 @@
-import { useState } from "react";
 import { FavoriteButton } from "./FavoriteButton";
 import { TrashButton } from "./TrashButton";
 import { UnfavoriteButton } from "./UnfavoriteButton";
 export const DogCard = ({
   dog: { name, image, description, id, isFavorite },
-  deleteDog,
   changeFav,
 }) => {
   return (
@@ -63,7 +61,6 @@ export const DogCard = ({
           fetch(`http://localhost:3000/dogs/${id}`, requestOptions)
             .then((response) => response.text())
             .then((result) => console.log(result));
-          deleteDog(id);
         }}
       />
 

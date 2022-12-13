@@ -7,7 +7,6 @@ export const CreateDogForm = ({ addDog }) => {
   const [selectedImage, setSelectedImage] = useState(dogPictures.BlueHeeler);
 
   const captureInput = ({ target: { name, value } }) => {
-    console.log(name, value);
     if (name === "dogName") {
       setDogName(value);
     }
