@@ -78,13 +78,6 @@
       "id": 10
     },
     {
-      "name": "Elwyn",
-      "image": "/src/assets/dalmation.png",
-      "description": "softly invoice payment Planner Assurance",
-      "isFavorite": false,
-      "id": 11
-    },
-    {
       "name": "Tiara",
       "image": "/src/assets/chihuahua.avif",
       "description": "invoice Automated Lebanon ew fishmonger solid vortals Wagon",
@@ -125,13 +118,6 @@
       "description": "Luxurious Daytona East South Classical",
       "isFavorite": true,
       "id": 17
-    },
-    {
-      "name": "Oceane",
-      "image": "/src/assets/dalmation.png",
-      "description": "Vietnam Chips male National synthesizing Dashawn Devolved",
-      "isFavorite": false,
-      "id": 18
     },
     {
       "name": "Larue",

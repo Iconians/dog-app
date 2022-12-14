@@ -16,10 +16,10 @@ function App() {
     fetch("http://localhost:3000/dogs")
       .then((res) => res.json())
       .then((res) => setDogs(res));
-  }, [dogs]);
+  }, []);
 
   // FIND MISSING FUNCTION HERE
-
+  // should be several function
   const findNewId = () => {
     let arr = [];
     let index = 0;
@@ -57,12 +57,12 @@ function App() {
       body: JSON.stringify(addId),
     })
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((data) => setDogs([...dogs, data]));
     // need to find 1st open/index slot for new dog
   };
 
-  const favorites = dogs.filter((dog) => dog.isFavorite === true);
-  const unfavorite = dogs.filter((dog) => dog.isFavorite === false);
+  const favorites = dogs.filter((dog) => dog.isFavorite);
+  const unfavorite = dogs.filter((dog) => dog.isFavorite);
   return (
     <div className="App">
       <header>

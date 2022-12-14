@@ -17,6 +17,7 @@ export const Dogs = ({
     setDogs(filterdogs);
   };
 
+  // should be 2 functions
   const changeFav = (id) => {
     const updateDog = dogs.map((dog) => {
       if (dog.id === id && dog.isFavorite === true) {

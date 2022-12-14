@@ -4,6 +4,7 @@ import { UnfavoriteButton } from "./UnfavoriteButton";
 export const DogCard = ({
   dog: { name, image, description, id, isFavorite },
   changeFav,
+  deleteDog,
 }) => {
   return (
     <div className="dog-card">
@@ -60,7 +61,7 @@ export const DogCard = ({
 
           fetch(`http://localhost:3000/dogs/${id}`, requestOptions)
             .then((response) => response.text())
-            .then((result) => console.log(result));
+            .then(deleteDog(id));
         }}
       />
 
