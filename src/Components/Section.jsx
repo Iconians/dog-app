@@ -13,33 +13,36 @@ export const Section = ({
   const favoriteDogCount = favorite;
   const unfavoriteDogCount = unFavorite;
   const active = "active";
-  const dogsToShow = ({ target: { id } }) => {
-    if (id === "favorite") {
-      if (favoriteDogsPage === false) {
-        setFavoriteDogsPage(true);
-        setUnfavoriteDogsPage(false);
-        setCreateDogPage(false);
-      } else {
-        setFavoriteDogsPage(false);
-      }
+  const showFavorited = () => {
+    if (favoriteDogsPage === false) {
+      setFavoriteDogsPage(true);
+      setUnfavoriteDogsPage(false);
+      setCreateDogPage(false);
     }
-    if (id === "unfavorite") {
-      if (unfavoriteDogsPage === false) {
-        setFavoriteDogsPage(false);
-        setUnfavoriteDogsPage(true);
-        setCreateDogPage(false);
-      } else {
-        setUnfavoriteDogsPage(false);
-      }
+    if (favoriteDogsPage === true) {
+      setFavoriteDogsPage(false);
     }
-    if (id === "createDog") {
-      if (createDogPage === false) {
-        setFavoriteDogsPage(false);
-        setUnfavoriteDogsPage(false);
-        setCreateDogPage(true);
-      } else {
-        setCreateDogPage(false);
-      }
+  };
+
+  const showUnFavorited = () => {
+    if (unfavoriteDogsPage === false) {
+      setFavoriteDogsPage(false);
+      setUnfavoriteDogsPage(true);
+      setCreateDogPage(false);
+    }
+    if (unfavoriteDogsPage === true) {
+      setUnfavoriteDogsPage(false);
+    }
+  };
+
+  const showCreateDogForm = () => {
+    if (createDogPage === false) {
+      setFavoriteDogsPage(false);
+      setUnfavoriteDogsPage(false);
+      setCreateDogPage(true);
+    }
+    if (createDogPage === true) {
+      setCreateDogPage(false);
     }
   };
 
@@ -53,7 +56,7 @@ export const Section = ({
           <div
             className={`selector ${favoriteDogsPage ? active : null}`}
             id="favorite"
-            onClick={dogsToShow}
+            onClick={showFavorited}
           >
             favorited ( {favoriteDogCount} )
           </div>
@@ -62,14 +65,14 @@ export const Section = ({
           <div
             className={`selector ${unfavoriteDogsPage ? active : null}`}
             id="unfavorite"
-            onClick={dogsToShow}
+            onClick={showUnFavorited}
           >
             unfavorited ( {unfavoriteDogCount} )
           </div>
           <div
             className={`selector ${createDogPage ? active : null}`}
             id="createDog"
-            onClick={dogsToShow}
+            onClick={showCreateDogForm}
           >
             create dog
           </div>

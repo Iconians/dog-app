@@ -40,7 +40,7 @@ function App() {
       index++;
       console.log(i, index);
     }
-    // incase there are no open id's
+    // incase there are no open id's in array
     if (id === 0) {
       id = arr.length;
     }
