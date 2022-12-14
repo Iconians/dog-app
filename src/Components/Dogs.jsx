@@ -18,13 +18,20 @@ export const Dogs = ({
   };
 
   // should be 2 functions
-  const changeFav = (id) => {
+  const favoriteDog = (id) => {
+    const updateDog = dogs.map((dog) => {
+      if (dog.id === id && dog.isFavorite === false) {
+        return { ...dog, isFavorite: true };
+      }
+      return dog;
+    });
+    setDogs(updateDog);
+  };
+
+  const unFavoriteDog = (id) => {
     const updateDog = dogs.map((dog) => {
       if (dog.id === id && dog.isFavorite === true) {
         return { ...dog, isFavorite: false };
-      }
-      if (dog.id === id && dog.isFavorite === false) {
-        return { ...dog, isFavorite: true };
       }
       return dog;
     });
@@ -38,7 +45,8 @@ export const Dogs = ({
       {favoriteDogs
         ? favorites.map((dog) => (
             <DogCard
-              changeFav={changeFav}
+              favoriteDog={favoriteDog}
+              unFavoriteDog={unFavoriteDog}
               deleteDog={deleteDog}
               dog={dog}
               key={dog.id}
@@ -49,7 +57,8 @@ export const Dogs = ({
       {unfavoriteDogs
         ? unFavorites.map((dog) => (
             <DogCard
-              changeFav={changeFav}
+              favoriteDog={favoriteDog}
+              unFavoriteDog={unFavoriteDog}
               deleteDog={deleteDog}
               dog={dog}
               key={dog.id}
@@ -60,7 +69,8 @@ export const Dogs = ({
       {!favoriteDogs && !unfavoriteDogs
         ? dogs.map((dog) => (
             <DogCard
-              changeFav={changeFav}
+              favoriteDog={favoriteDog}
+              unFavoriteDog={unFavoriteDog}
               deleteDog={deleteDog}
               dog={dog}
               key={dog.id}

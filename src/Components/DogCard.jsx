@@ -3,7 +3,8 @@ import { TrashButton } from "./TrashButton";
 import { UnfavoriteButton } from "./UnfavoriteButton";
 export const DogCard = ({
   dog: { name, image, description, id, isFavorite },
-  changeFav,
+  favoriteDog,
+  unFavoriteDog,
   deleteDog,
 }) => {
   return (
@@ -26,7 +27,7 @@ export const DogCard = ({
             fetch(`http://localhost:3000/dogs/${id}`, requestOptions).then(
               (response) => response.text()
             );
-            changeFav(id);
+            unFavoriteDog(id);
           }}
         />
       ) : (
@@ -46,7 +47,7 @@ export const DogCard = ({
             fetch(`http://localhost:3000/dogs/${id}`, requestOptions).then(
               (response) => response.text()
             );
-            changeFav(id);
+            favoriteDog(id);
           }}
         />
       )}

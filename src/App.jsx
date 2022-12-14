@@ -19,50 +19,50 @@ function App() {
   }, []);
 
   // FIND MISSING FUNCTION HERE
-  // should be several function
-  const findNewId = () => {
+  const sortDogs = () => {
     let arr = [];
-    let index = 0;
-    let newId = 0;
-    dogs.map((obj) => arr.push(obj.id));
+    dogs.map((dog) => arr.push(dog.id));
     arr.sort((a, b) => {
       return a - b;
     });
+    return arr;
+  };
+
+  const assignId = () => {
+    const arr = sortDogs();
+    let id = 0;
+    let index = 0;
+    // find first open id slot
     for (let i = 0; i < arr.length; i++) {
-      if (arr[i] !== index) {
-        if (newId === 0) {
-          newId = index;
-        }
-        index++;
+      if (arr[i] !== index && id === 0) {
+        id = index;
       }
-      if (arr[i] === index) {
-        index++;
-      }
+      index++;
+      console.log(i, index);
     }
-    if (newId === 0) {
-      newId = arr.length;
+    // incase there are no open id's
+    if (id === 0) {
+      id = arr.length;
     }
-    return newId;
+    return id;
   };
 
   const addDog = (newDog) => {
-    let currentIds = findNewId();
-    let newId = currentIds;
-    let addId = { ...newDog, id: newId };
+    let getId = assignId();
     fetch("http://localhost:3000/dogs", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(addId),
+      body: JSON.stringify({ ...newDog, id: getId }),
     })
       .then((res) => res.json())
       .then((data) => setDogs([...dogs, data]));
     // need to find 1st open/index slot for new dog
   };
 
-  const favorites = dogs.filter((dog) => dog.isFavorite);
-  const unfavorite = dogs.filter((dog) => dog.isFavorite);
+  const favorites = dogs.filter((dog) => dog.isFavorite === true);
+  const unfavorite = dogs.filter((dog) => dog.isFavorite === false);
   return (
     <div className="App">
       <header>

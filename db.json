@@ -81,7 +81,7 @@
       "name": "Tiara",
       "image": "/src/assets/chihuahua.avif",
       "description": "invoice Automated Lebanon ew fishmonger solid vortals Wagon",
-      "isFavorite": false,
+      "isFavorite": true,
       "id": 12
     },
     {
@@ -125,6 +125,13 @@
       "description": "Saudi East Applications who Bespoke",
       "isFavorite": true,
       "id": 19
+    },
+    {
+      "name": "dog1",
+      "image": "/src/assets/blue-heeler.png",
+      "description": "dcdzczcd",
+      "isFavorite": true,
+      "id": 11
     }
   ]
 }
