@@ -5,6 +5,7 @@ import { Dogs } from "./Components/Dogs";
 import { Section } from "./Components/Section";
 import "./fonts/RubikBubbles-Regular.ttf";
 import { useEffect } from "react";
+import { addDogsFetch } from "./Fetches/addDogsFetch";
 
 function App() {
   const [favoriteDogsPage, setFavoriteDogsPage] = useState(false);
@@ -18,46 +19,11 @@ function App() {
       .then((res) => setDogs(res));
   }, []);
 
-  // FIND MISSING FUNCTION HERE
-  const sortDogs = () => {
-    let arr = [];
-    dogs.map((dog) => arr.push(dog.id));
-    arr.sort((a, b) => {
-      return a - b;
-    });
-    return arr;
-  };
-
-  const assignId = () => {
-    const arr = sortDogs();
-    let id = 0;
-    let index = 0;
-    // find first open id slot
-    for (let i = 0; i < arr.length; i++) {
-      if (arr[i] !== index && id === 0) {
-        id = index;
-      }
-      index++;
-      console.log(i, index);
-    }
-    // incase there are no open id's in array
-    if (id === 0) {
-      id = arr.length;
-    }
-    return id;
-  };
-
   const addDog = (newDog) => {
-    let getId = assignId();
-    fetch("http://localhost:3000/dogs", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ ...newDog, id: getId }),
-    })
+    addDogsFetch(newDog)
       .then((res) => res.json())
       .then((data) => setDogs([...dogs, data]));
+
     // need to find 1st open/index slot for new dog
   };
 

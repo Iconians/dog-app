@@ -1,3 +1,6 @@
+import { deleteDogsFetch } from "../Fetches/deleteDogsFetch";
+import { favoriteDogFetch } from "../Fetches/favoriteDogFetch";
+import { unfavoriteDogFetch } from "../Fetches/unfavoriteDogFetch";
 import { FavoriteButton } from "./FavoriteButton";
 import { TrashButton } from "./TrashButton";
 import { UnfavoriteButton } from "./UnfavoriteButton";
@@ -13,41 +16,13 @@ export const DogCard = ({
       {isFavorite ? (
         <UnfavoriteButton
           onClick={() => {
-            const myHeaders = new Headers();
-            myHeaders.append("Content-Type", "application/json");
-            const raw = JSON.stringify({
-              isFavorite: false,
-            });
-            const requestOptions = {
-              method: "PATCH",
-              headers: myHeaders,
-              body: raw,
-              redirect: "follow",
-            };
-            fetch(`http://localhost:3000/dogs/${id}`, requestOptions).then(
-              (response) => response.text()
-            );
-            unFavoriteDog(id);
+            unfavoriteDogFetch(id).then(unFavoriteDog(id));
           }}
         />
       ) : (
         <FavoriteButton
           onClick={() => {
-            const myHeaders = new Headers();
-            myHeaders.append("Content-Type", "application/json");
-            const raw = JSON.stringify({
-              isFavorite: true,
-            });
-            const requestOptions = {
-              method: "PATCH",
-              headers: myHeaders,
-              body: raw,
-              redirect: "follow",
-            };
-            fetch(`http://localhost:3000/dogs/${id}`, requestOptions).then(
-              (response) => response.text()
-            );
-            favoriteDog(id);
+            favoriteDogFetch(id).then(favoriteDog(id));
           }}
         />
       )}
@@ -55,14 +30,7 @@ export const DogCard = ({
       <TrashButton
         disabled={isFavorite ? true : false}
         onClick={() => {
-          const requestOptions = {
-            method: "DELETE",
-            redirect: "follow",
-          };
-
-          fetch(`http://localhost:3000/dogs/${id}`, requestOptions)
-            .then((response) => response.text())
-            .then(deleteDog(id));
+          deleteDogsFetch(id).then(deleteDog(id));
         }}
       />
 
