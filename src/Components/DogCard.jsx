@@ -4,6 +4,7 @@ import { unfavoriteDogFetch } from "../Fetches/unfavoriteDogFetch";
 import { FavoriteButton } from "./FavoriteButton";
 import { TrashButton } from "./TrashButton";
 import { UnfavoriteButton } from "./UnfavoriteButton";
+// keep props
 export const DogCard = ({
   dog: { name, image, description, id, isFavorite },
   favoriteDog,

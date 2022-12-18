@@ -1,5 +1,5 @@
 import { Icons } from "../assets/icons";
-
+// keep props
 export const TrashButton = ({ onClick, disabled = false }) => (
   <img
     src={Icons.Trash}

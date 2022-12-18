@@ -1,50 +1,26 @@
+import { useAppContext } from "../Providers/app.provider";
+import React from "react";
+
+// make work without props
 export const Section = ({
+  // eslint-disable-next-line react/prop-types
   label,
+  // eslint-disable-next-line react/prop-types
   children,
-  createDogPage,
-  setCreateDogPage,
-  setFavoriteDogsPage,
-  setUnfavoriteDogsPage,
-  favoriteDogsPage,
-  unfavoriteDogsPage,
-  favorite,
-  unFavorite,
 }) => {
-  const favoriteDogCount = favorite;
-  const unfavoriteDogCount = unFavorite;
+  const {
+    favorites,
+    unfavorite,
+    showFavorited,
+    showUnFavorited,
+    showCreateDogForm,
+    favoriteDogsPage,
+    unfavoriteDogsPage,
+    createDogPage,
+  } = useAppContext();
+  const favoriteDogCount = favorites.length;
+  const unfavoriteDogCount = unfavorite.length;
   const active = "active";
-  const showFavorited = () => {
-    if (favoriteDogsPage === false) {
-      setFavoriteDogsPage(true);
-      setUnfavoriteDogsPage(false);
-      setCreateDogPage(false);
-    }
-    if (favoriteDogsPage === true) {
-      setFavoriteDogsPage(false);
-    }
-  };
-
-  const showUnFavorited = () => {
-    if (unfavoriteDogsPage === false) {
-      setFavoriteDogsPage(false);
-      setUnfavoriteDogsPage(true);
-      setCreateDogPage(false);
-    }
-    if (unfavoriteDogsPage === true) {
-      setUnfavoriteDogsPage(false);
-    }
-  };
-
-  const showCreateDogForm = () => {
-    if (createDogPage === false) {
-      setFavoriteDogsPage(false);
-      setUnfavoriteDogsPage(false);
-      setCreateDogPage(true);
-    }
-    if (createDogPage === true) {
-      setCreateDogPage(false);
-    }
-  };
 
   return (
     <section>

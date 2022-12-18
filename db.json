@@ -125,27 +125,6 @@
       "description": "Saudi East Applications who Bespoke",
       "isFavorite": true,
       "id": 19
-    },
-    {
-      "name": "dog1",
-      "image": "/src/assets/blue-heeler.png",
-      "description": "scdcdsa",
-      "isFavorite": true,
-      "id": 20
-    },
-    {
-      "name": "dog2",
-      "image": "/src/assets/blue-heeler.png",
-      "description": "xcaxsx",
-      "isFavorite": true,
-      "id": 21
-    },
-    {
-      "name": "dog3",
-      "image": "/src/assets/blue-heeler.png",
-      "description": "xzacxzc",
-      "isFavorite": true,
-      "id": 22
     }
   ]
 }

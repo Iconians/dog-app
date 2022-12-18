@@ -1,7 +1,9 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { dogPictures } from "../assets/dog-pictures";
+import { useAppContext } from "../Providers/app.provider";
 
-export const CreateDogForm = ({ addDog }) => {
+export const CreateDogForm = () => {
+  const { addDog } = useAppContext();
   const [dogName, setDogName] = useState("");
   const [dogdesc, setDogDesc] = useState("");
   const [selectedImage, setSelectedImage] = useState(dogPictures.BlueHeeler);
@@ -54,7 +56,11 @@ export const CreateDogForm = ({ addDog }) => {
         }}
       >
         {Object.entries(dogPictures).map(([label, pictureValue]) => {
-          return <option value={pictureValue}>{label}</option>;
+          return (
+            <option key={label} value={pictureValue}>
+              {label}
+            </option>
+          );
         })}
       </select>
       <input type="submit" value="submit" />

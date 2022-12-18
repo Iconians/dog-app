@@ -7,14 +7,3 @@ export const unfavoriteDogFetch = (id) => {
   };
   return fetch(`http://localhost:3000/dogs/${id}`, requestOptions)
 }
-
-
-
-
-// fetch("http://localhost:3000/dogs", {
-//   method: "POST",
-//   headers: {
-//     "Content-Type": "application/json",
-//   },
-//   body: JSON.stringify({ ...newDog, id: getId }),
-// })

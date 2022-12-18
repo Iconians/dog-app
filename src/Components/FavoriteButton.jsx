@@ -1,4 +1,5 @@
 import { Icons } from "../assets/icons";
+// keep props
 export const FavoriteButton = ({ onClick }) => (
   <img
     src={Icons.EmptyHeart}

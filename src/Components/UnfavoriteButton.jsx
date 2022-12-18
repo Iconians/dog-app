@@ -1,5 +1,5 @@
 import { Icons } from "../assets/icons";
-
+// keep props
 export const UnfavoriteButton = ({ onClick }) => (
   <img
     src={Icons.Heart}

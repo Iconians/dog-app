@@ -1,17 +1,16 @@
-import { filter } from "lodash";
+import { useAppContext } from "../Providers/app.provider";
 import { DogCard } from "./DogCard";
+import React from "react";
 
-// Right now this is a static array, but you will need to fetch these dogs from the local database
-
-// Right now these dogs are constant, but in reality we should be getting these from our server
-export const Dogs = ({
-  dogs,
-  favoriteDogs,
-  unfavoriteDogs,
-  favorites,
-  unFavorites,
-  setDogs,
-}) => {
+export const Dogs = () => {
+  const {
+    dogs,
+    favorites,
+    unfavorite,
+    favoriteDogsPage,
+    unfavoriteDogsPage,
+    setDogs,
+  } = useAppContext();
   const deleteDog = (id) => {
     const filterdogs = dogs.filter((dog) => dog.id !== id);
     setDogs(filterdogs);
@@ -41,7 +40,7 @@ export const Dogs = ({
     //  the "<> </>"" are called react fragments, it's like adding all the html inside
     // without adding an actual html element
     <>
-      {favoriteDogs
+      {favoriteDogsPage
         ? favorites.map((dog) => (
             <DogCard
               favoriteDog={favoriteDog}
@@ -53,8 +52,8 @@ export const Dogs = ({
             />
           ))
         : null}
-      {unfavoriteDogs
-        ? unFavorites.map((dog) => (
+      {unfavoriteDogsPage
+        ? unfavorite.map((dog) => (
             <DogCard
               favoriteDog={favoriteDog}
               unFavoriteDog={unFavoriteDog}
@@ -65,7 +64,7 @@ export const Dogs = ({
             />
           ))
         : null}
-      {!favoriteDogs && !unfavoriteDogs
+      {!favoriteDogsPage && !unfavoriteDogsPage
         ? dogs.map((dog) => (
             <DogCard
               favoriteDog={favoriteDog}
